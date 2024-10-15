@@ -1,0 +1,29 @@
+/* About Us Container */
+.about-us-container {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the container */
+  margin: 20px 0; /* Space around the container */
+  text-align: center; /* Center the text */
+}
+
+/* About Us Heading Styles */
+.about-us-heading {
+  font-size: 48px; /* Adjust the size as needed */
+  color: #00ff00; /* Bright green color for the text */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(0, 255, 0, 0.6); /* Glow effect */
+  animation: glow 1.5s infinite alternate; /* Glow animation */
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 
+                   0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  100% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1), 
+                   0 0 30px rgba(0, 255, 0, 1);
+  }
+}

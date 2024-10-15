@@ -1,0 +1,100 @@
+/* Image1.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Importing the Roboto font */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Change to Roboto font */
+    color: #fff; /* Default text color for better visibility on dark background */
+    background: url('C:\Users\muska\OneDrive\Documents\MUSKAN\technological bg.jpg') no-repeat center center fixed; /* Use your image path */
+    background-size: cover; /* Cover the entire viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    position: relative; /* Position relative for overlay effects */
+    width: 80%; /* Responsive width */
+    max-width: 800px; /* Maximum width */
+}
+
+/* Heading Card for About Us */
+.about-us {
+    font-size: 2.5em; /* Font size for About Us heading */
+    color: green; /* Green font color */
+    margin-bottom: 20px; /* Spacing below the heading */
+    padding: 10px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px green; /* Glow effect */
+    transition: box-shadow 0.3s; /* Transition for glow effect */
+}
+
+.about-us:hover {
+    box-shadow: 0 0 30px #00ff00; /* Stronger glow effect on hover */
+}
+
+h2 {
+    font-size: 2em;
+    color: lightgrey; /* Lighter color for subheading */
+    margin: 10px 0;
+}
+
+/* Card for Services Heading */
+.services-heading {
+    background-color: rgba(30, 30, 30, 0.9); /* Dark background for the heading card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for the heading card */
+    box-shadow: 0 0 20px green; /* Glow effect */
+    margin: 20px 0; /* Margin for spacing */
+    transition: box-shadow 0.3s; /* Transition for glow effect */
+}
+
+.services-heading:hover {
+    box-shadow: 0 0 30px #00ff00; /* Stronger glow effect on hover */
+}
+
+p {
+    font-size: 1.2em;
+    color: lightgrey; /* Lighter color for paragraphs */
+    margin: 10px 0;
+}
+
+.services {
+    display: flex;
+    flex-direction: column; /* Stack service items vertically */
+    align-items: center; /* Center the service items */
+    margin: 20px 0;
+}
+
+.service-item {
+    background-color: grey; /* Grey background for service cards */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0; /* Spacing between items */
+    width: 80%; /* Responsive width */
+    max-width: 600px; /* Maximum width */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s; /* Smooth transition */
+    color: black; /* Default text color for service items */
+    position: relative; /* Position relative for overlay effects */
+    overflow: hidden; /* Prevent overflow for gradient */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background: linear-gradient(to bottom, black, darkgrey); /* Dark grey and black gradient on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Brighten background on service card hover */
+.service-item:hover ~ .container {
+    filter: brightness(1.1); /* Slightly brighten background */
+}
